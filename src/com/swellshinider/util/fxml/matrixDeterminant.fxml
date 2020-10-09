@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.MatrixDeterminantController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="500.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Multi Calculator">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#accessSite" text="Acessar site" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Sobre" />
+                  <MenuItem fx:id="versionText" disable="true" mnemonicParsing="false" text="version" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="124.0" layoutY="271.0" mnemonicParsing="false" onAction="#calcDet" prefHeight="37.0" prefWidth="100.0" text="Det(A) = " />
+      <TextField fx:id="resultText" editable="false" layoutX="233.0" layoutY="270.0" prefHeight="39.0" prefWidth="187.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="69.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A =">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i j" />
+      <Line endX="-25.999977111816406" endY="137.5999755859375" layoutX="146.0" layoutY="104.0" startX="-25.999977111816406" startY="-50.399993896484375" />
+      <Line endX="-25.999977111816406" endY="137.5999755859375" layoutX="446.0" layoutY="104.0" startX="-25.999977111816406" startY="-50.399993896484375" />
+      <TextArea fx:id="matrixText" layoutX="124.0" layoutY="53.0" prefHeight="189.0" prefWidth="288.0" text="1 2 3&#10;4 5 6&#10;7 8 9">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </TextArea>
+      <Text fill="RED" layoutX="119.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* monte sua matriz, conforme o exemplo" wrappingWidth="298.93670654296875" />
+   </children>
+</Pane>

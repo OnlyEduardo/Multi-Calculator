@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.FactorialCalculatorController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="441.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Multi Calculator">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#accessSite" text="Acessar site" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Sobre" />
+                  <MenuItem fx:id="versionText" disable="true" mnemonicParsing="false" text="version" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="129.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero:" wrappingWidth="148.5078125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numberToCalc" layoutX="129.0" layoutY="81.0" prefHeight="25.0" prefWidth="188.0" />
+      <Text fill="RED" layoutX="127.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="recomendado max. 12000" wrappingWidth="188.0" />
+      <Button layoutX="159.0" layoutY="136.0" mnemonicParsing="false" onAction="#calcFactorial" prefHeight="35.0" prefWidth="128.0" text="Calcular" />
+      <Text layoutX="24.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fatorial:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="resultText" editable="false" layoutX="100.0" layoutY="193.0" prefHeight="200.0" prefWidth="283.0" text="&#10;&#10;" />
+      <Text fx:id="nOfZeros" layoutX="6.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="433.79998779296864">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nOfCharacters" layoutX="6.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="433.79998779296875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

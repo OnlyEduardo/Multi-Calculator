@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.MatrixCalculusController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="715.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Multi Calculator">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#accessSite" text="Acessar site" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Sobre" />
+                  <MenuItem fx:id="versionText" disable="true" mnemonicParsing="false" text="version" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="33.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A =">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i j" />
+      <TextArea fx:id="matrixA" layoutX="91.0" layoutY="65.0" prefHeight="192.0" prefWidth="240.0" text="1 2/3&#10;4 5">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="359.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B =">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="374.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i j" />
+      <TextArea fx:id="matrixB" layoutX="417.0" layoutY="65.0" prefHeight="192.0" prefWidth="254.0" text="-1 2 &#10;3 4.5">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="215.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C =">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="230.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i j" />
+      <Button layoutX="51.0" layoutY="310.0" mnemonicParsing="false" onAction="#calculateAction" prefHeight="42.0" prefWidth="114.0" text="Calcular" />
+      <TextArea fx:id="matrixC" editable="false" layoutX="275.0" layoutY="281.0" prefHeight="156.0" prefWidth="200.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </TextArea>
+      <Text fx:id="errorMessage" fill="RED" layoutX="90.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="419.7366943359375" />
+      <ChoiceBox layoutX="51.0" layoutY="360.0" prefHeight="25.0" prefWidth="114.0" />
+   </children>
+</Pane>

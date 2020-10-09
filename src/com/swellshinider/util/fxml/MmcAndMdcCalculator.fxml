@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.MMCAndMDCController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="490.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Multi Calculator">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#accessSite" text="Acessar site" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Sobre" />
+                  <MenuItem fx:id="versionText" disable="true" mnemonicParsing="false" text="version" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primeiro número:" wrappingWidth="162.39996242523193">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numberToCalc1" layoutX="177.0" layoutY="51.0" prefHeight="27.0" prefWidth="257.0" />
+      <Text layoutX="14.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo número:" wrappingWidth="162.39996242523193">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numberToCalc2" layoutX="177.0" layoutY="88.0" prefHeight="27.0" prefWidth="257.0" />
+      <Button layoutX="177.0" layoutY="140.0" mnemonicParsing="false" onAction="#calculateValues" prefHeight="41.0" prefWidth="136.0" text="Calcular" />
+      <Text layoutX="72.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maior divisor comum (MDC):">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mdcResult" editable="false" layoutX="369.0" layoutY="211.0" prefHeight="25.0" prefWidth="75.0" />
+      <Text layoutX="72.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mínimo múltiplo comum (MMC):">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mmcResult" editable="false" layoutX="369.0" layoutY="249.0" prefHeight="25.0" prefWidth="75.0" />
+   </children>
+</Pane>

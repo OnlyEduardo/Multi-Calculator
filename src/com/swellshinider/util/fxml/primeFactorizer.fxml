@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.PrimeFactorizeController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="480.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Multi Calculator">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goBack" text="Voltar" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#accessSite" text="Acessar site" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Sobre" />
+                  <MenuItem fx:id="versionText" disable="true" mnemonicParsing="false" text="version" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TextField fx:id="inputNumber" layoutX="88.0" layoutY="82.0" onAction="#doFactorization" prefHeight="25.0" prefWidth="305.0" />
+      <Text layoutX="88.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número:" wrappingWidth="53.33673095703125" />
+      <TextField fx:id="factorizationResult" editable="false" layoutX="88.0" layoutY="200.0" prefHeight="25.0" prefWidth="305.0" />
+      <Button layoutX="164.0" layoutY="145.0" mnemonicParsing="false" onAction="#doFactorization" prefHeight="38.0" prefWidth="153.0" text="Fatorar" />
+   </children>
+</Pane>

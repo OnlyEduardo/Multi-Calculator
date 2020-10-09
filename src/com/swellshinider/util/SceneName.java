@@ -1,0 +1,16 @@
+package com.swellshinider.util;
+
+public enum SceneName {
+    MAIN,
+    PRIME_FACTORIZATION,
+    MATRIX_DETERMINANT,
+    BASE_CONVERTER,
+    EULER_FUNCTION,
+    PRIME_NUMBER_CHECKER,
+    FACTORIAL_CALCULATOR,
+    MMC_MDC_CALCULATOR,
+    MATRIX_CALCULUS,
+    EQUATION_CALCULATOR,
+
+    EXIT,
+}
